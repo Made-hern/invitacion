@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+  <title>Mis xv</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url("https://drive.google.com/uc?export=view&id=1bQNtV35iPB5GGn-Tp-WjmrSvJ9qWKWSc");
+      height: 100%;
+    }
+
+    /* Contenedor para la imagen y el texto */
+    .portada {
+      position: relative;
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+
+    .titulo {
+      position: absolute;
+      top: 18%;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      font-size: 3em;
+      color: rgb(194, 127, 127);
+      font-family: serif;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .redonda {
+      width: 40%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgb(147, 128, 17);
+      text-align: center;
+      padding: 5px;
+    }
+
+    .flores {
+      width: 300px;
+      height: 200px;
+      top: -110%;
+      left: 25px;
+      position: relative;
+    }
+
+    .cuadrada {
+      width: 355px;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 20%;
+    }
+
+    .texto2 {
+      top: 95%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -150%);
+      font-size: 2.5em;
+      color: rgb(194, 127, 127);
+      font-family: serif;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      margin-top: -15%;
+      padding: 20px;
+      color: rgb(50, 49, 48);
+      position: relative;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: medium;
+    }
+
+    .numeros{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #f7f0f400;
+      color: rgb(36, 34, 34);
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid black;
+    }
+
+    iframe {
+      margin-top: 10px;
+    }
+
+    .contador {
+      font-size: 1.5rem;
+      color: #333;
+      margin-top: 10%;
+    }
+
+    .dias{
+      margin-top: 15%;
+    }
+
+    .audio-container {
+      margin-top: 20px;
+    }
+
+    .play-button {
+      background-color: #ff69b40c;
+      color: rgb(2, 2, 2);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 2px solid black;
+    }
+
+    audio {
+      margin-top: 10px;
+    }
+
+
+    .ubicacion{
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .lluvia{
+      top: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      
+    }
+
+    .sobres{
+      top:15%;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+    }
+
+    .confirmacion{
+      top:50%;
+    }
+
+    .asientos {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Portada con foto -->
+  <div class="portada">
+    <img src="https://drive.google.com/uc?id=19gYdDJXWakrrzSoCuX3Q93aYAJu6NnVA" alt="imagen desde google drive" class="redonda">
+    <div class="titulo">Mis XV</div>
+  </div>
+
+  <div class="flores"> <img src="https://drive.google.com/uc?id=1wlcKyYRevdKQgEwApGRhzlLeKcTlTwlj" width="50%" height="auto" class="flores"></div>
+  <div class="texto2"> <h3>Ruth Hernandez</h3> </div>
+
+  <!-- Bienvenida y canción -->
+  <div class="section">
+    <h2>Clic para escuchar la canción</h2>
+
+    <!-- Botón para reproducir la canción -->
+    <div class="audio-container">
+      <button class="play-button" onclick="document.getElementById('audioPlayer').play()">Repreducir cancion</button>
+      <audio id="audioPlayer" src="https://drive.google.com/uc?id=1hv6FqrOzTX6bGMS1IdtIZag0325w-UZb" preload="auto controls"></audio>
+    </div>
+
+    <p>Es un honor que nos acompañes en este día tan importante.</p>
+    <img src="https://drive.google.com/uc?id=1h7oDYIDeZalxfG8IjPuTx3gBDb_-bUTT" alt="segunda imagen" class="cuadrada">
+  </div>
+
+  <!-- Contador regresivo -->
+  <div class="section">
+    <div class="dias"><h2>¡Faltan pocos días!</h2></div>
+    <p id="contador" class="contador"></p>
+  </div>
+
+  <!-- Información de la fiesta -->
+  <div class="section">
+    <h3>Fecha:</h3>
+    <div class="numeros">
+    <p>22</p>
+    <p>05</p>
+    <p>25</p>
+    </div>
+  </div>
+  <div class="ubicacion1">
+    <div><img src="https://drive.google.com/uc?id=1Fbaz4WyYltuIBgD8NSHkqhfLuKBckAFM" width="50%" height="auto" class="ubicacion"></div>
+  <a href="https://www.google.com/maps?q=UBICACION" class="button" target="_blank" rel="noopener noreferrer">Ver Ubicación</a>
+
+  <div class="asientos"><p>Familia Hernandez Aguilar</p></div>
+  <img src="https://drive.google.com/uc?id=17J7rsu3mQuMkJFk3vJaLMmtBRWxiIZZP" width="30%" height="auto" class="invitados">
+  
+
+  <!-- Confirmación de asistencia -->
+    <div class="confirmacion"><a href="URL-DE-CONFIRMACION" class="button">Confirmar Asistencia</a></div>
+
+  <!-- Lluvia de sobres -->
+  <div class="lluvia"><h2>Lluvia de Sobres</h2></div>
+  <div class="sobres"> <p>Tu presencia es lo más importante, pero si deseas contribuir, lo agradecemos de corazón.</p></div>
+
+  <script>
+    // Contador regresivo
+    const fechaEvento = new Date("June 22, 2025 00:00:00").getTime();
+    const contador = document.getElementById("contador");
+
+    setInterval(() => {
+      const ahora = new Date().getTime();
+      const tiempoRestante = fechaEvento - ahora;
+
+      if (tiempoRestante > 0) {
+        const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+
+        contador.innerHTML = `${dias} días ${horas} horas ${minutos} minutos ${segundos} segundos`;
+      } else {
+        contador.innerHTML = "¡El gran día ha llegado!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
